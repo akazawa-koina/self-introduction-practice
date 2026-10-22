@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>自己紹介 - 赤澤恋奈</title>
+</head>
+<body>
+    <h1>自己紹介</h1>  
+    <h2>プロフィール</h2> 
+    <p>名前： 赤澤恋奈</p>
+    <p>年齢： 23歳</p>
+    <p>出身地： 群馬県</p>
+    <p>趣味： 簡単な料理、ゲーム</p>
+
+    <h2>好きなもの</h2>
+    <ul>キッシュ</ul>
+    <ul>洋菓子</ul>
+    <ul>お肉</ul>
+
+    <h2>今年の目標</h2>
+    <ol>
+        <li>プログラミングの学習を頑張る</li>
+        <li>仕事を頑張る</li>
+        <li>ダイエットする</li>
+    </ol>
+
+    <h2>リンク</h2>
+    <a href="https://github.com/akazawa-koina" target="_blank">私のGitHub</a>
+
+    <h2>好きな風景</h2>
+    <img src=c:\Users\piang\Downloads\fuji-mountain-kawaguchiko-lake-morning-autumn-seasons-fuji-mountain-yamanachi-japan.jpg alt="好きな風景" width="400">
+
+    <h2>お問い合わせ</h2>
+    <form action="/submit" method="POST">
+        <div>
+            <label for="content-name">お名前：</label>
+            <input type="text" id="content-name" name="name" required>
+        </div>
+        <div>
+            <label for="content-category">お問い合わせ種別</label>
+            <select id="content-category" name="category">
+                <option value="">-- 選択してください --</option>
+                <option value="general">一般的なお問い合わせ</option>
+                <option value="feedback">ご意見・ご要望</option>
+            </select>
+        </div>
+        <div>
+            <label for="content-message">お問い合わせ内容</label>
+            <textarea id="content-message" name="content-message" rows="5"></textarea>
+        </div>
+        <div>
+            <button type="submit">送信する</button>
+        </div>
+</form>
+</body>
+</html>
